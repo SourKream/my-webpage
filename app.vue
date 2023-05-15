@@ -4,4 +4,6 @@
       <NuxtPage />
     </div>
   </div>
+
+  <AppFooter />
 </template>
