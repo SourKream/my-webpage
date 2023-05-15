@@ -2,32 +2,17 @@
   <div>
     <center>
       <h1 class="site-heading">
-        Shantanu
+        Welcome to my webpage
       </h1>
 
       <p class="text">
-        Hi. Rebuilding this app using Nuxt3!
+        Hi. I am in the process of rebuilding this app using Nuxt3!
       </p>
+
+      <OscillatingCube />
     </center>
 
-    <h1 class="page-heading">
-      Posts
-    </h1>
-
-    <ul class="post-list">
-      <li
-        v-for="post of posts"
-        :key="post.path"
-      >
-        <span class="post-meta">{{ post.date }}</span>
-        <NuxtLink
-          :to="post.path"
-          class="post-link"
-        >
-          {{ post.title }}
-        </NuxtLink>
-      </li>
-    </ul>
+    <PostsList />
 
     <center>
       <iframe
@@ -39,13 +24,3 @@
     </center>
   </div>
 </template>
-
-<script setup>
-const router = useRouter()
-
-const posts = router.options.routes?.filter(route => route.path?.startsWith('/posts/')).map(route => ({
-  path: route.path,
-  title: route.meta?.title,
-  date: route.meta?.date
-}))
-</script>
