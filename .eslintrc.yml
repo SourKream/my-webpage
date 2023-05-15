@@ -13,6 +13,7 @@ plugins:
   - vue
 rules:
   no-undef: off
+  "@typescript-eslint/explicit-function-return-type": off
 overrides:
   - files:
     - 'pages/**/*.vue'
