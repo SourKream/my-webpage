@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-const { render } = useOscillatingCube();
+const { render } = useOscillatingCube('cube_holder');
 
 onMounted(async () => {
   const { default: P5 } = await import("p5");

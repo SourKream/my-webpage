@@ -11,14 +11,5 @@
     </div>
 
     <PostsList />
-
-    <div style="text-align: center">
-      <iframe
-        src="https://editor.p5js.org/SourKream/embed/LS_VYq7dC"
-        width="600"
-        height="600"
-        style="border: none"
-      />
-    </div>
   </div>
 </template>
