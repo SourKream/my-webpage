@@ -3,11 +3,11 @@
 </template>
 
 <script setup>
-const { render } = useOscillatingCube()
+const { render } = useOscillatingCube();
 
 onMounted(async () => {
-  const { default: P5 } = await import('p5')
+  const { default: P5 } = await import("p5");
   // eslint-disable-next-line no-new
-  new P5(render)
-})
+  new P5(render);
+});
 </script>

@@ -1,9 +1,7 @@
 <template>
   <div>
     <center>
-      <h1 class="site-heading">
-        Welcome to my webpage
-      </h1>
+      <h1 class="site-heading">Welcome to my webpage</h1>
 
       <p class="text">
         Hi. I am in the process of rebuilding this app using Nuxt3!
@@ -19,7 +17,7 @@
         src="https://editor.p5js.org/SourKream/embed/LS_VYq7dC"
         width="600"
         height="600"
-        style="border:none;"
+        style="border: none"
       />
     </center>
   </div>

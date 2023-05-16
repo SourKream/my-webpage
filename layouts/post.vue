@@ -3,7 +3,7 @@
     <div class="page-content">
       <div class="wrapper">
         <div class="post">
-          <br>
+          <br />
 
           <header class="post-header">
             <h1 class="post-title">
@@ -14,7 +14,7 @@
             </p>
           </header>
 
-          <br><br>
+          <br /><br />
 
           <article class="post-content">
             <slot />
@@ -28,5 +28,5 @@
 </template>
 
 <script setup>
-const route = useRoute()
+const route = useRoute();
 </script>

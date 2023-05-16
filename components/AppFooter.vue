@@ -2,11 +2,11 @@
   <footer class="site-footer">
     <div class="wrapper">
       <div class="footer-col-wrapper">
-        <div class="footer-col  footer-col-1">
+        <div class="footer-col footer-col-1">
           <ul class="contact-list">
             <li>
               <a href="mailto:{{ email }}">
-                <span class="icon  icon--instagram">
+                <span class="icon icon--instagram">
                   <svg viewBox="0 0 483.3 483.3">
                     <path
                       fill="#828282"
@@ -30,7 +30,7 @@
 
             <li v-if="githubUsername">
               <a :href="`https://github.com/${githubUsername}`">
-                <span class="icon  icon--github">
+                <span class="icon icon--github">
                   <svg viewBox="0 0 16 16">
                     <path
                       fill="#828282"
@@ -45,11 +45,11 @@
           </ul>
         </div>
 
-        <div class="footer-col  footer-col-3">
+        <div class="footer-col footer-col-3">
           <ul class="social-list">
             <li v-if="instagramUsername">
               <a :href="`https://instagram.com/${instagramUsername}`">
-                <span class="icon  icon--instagram">
+                <span class="icon icon--instagram">
                   <svg viewBox="0 0 169.063 169.063">
                     <path
                       fill="#828282"
@@ -79,7 +79,7 @@
 
             <li v-if="twitterUsername">
               <a :href="`https://twitter.com/${twitterUsername}`">
-                <span class="icon  icon--twitter">
+                <span class="icon icon--twitter">
                   <svg viewBox="0 0 16 16">
                     <path
                       fill="#828282"
@@ -100,8 +100,8 @@
 </template>
 
 <script setup>
-const email = 'kumarshantanu95@gmail.com'
-const githubUsername = 'SourKream'
-const instagramUsername = 'ThatGuyFromDelhi'
-const twitterUsername = 'ThatGuyFrmDelhi'
+const email = "kumarshantanu95@gmail.com";
+const githubUsername = "SourKream";
+const instagramUsername = "ThatGuyFromDelhi";
+const twitterUsername = "ThatGuyFrmDelhi";
 </script>
