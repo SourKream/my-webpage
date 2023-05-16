@@ -6,4 +6,7 @@ export default defineNuxtConfig({
     lintOnStart: false,
   },
   ssr: false,
+  app: {
+    baseURL: "/my-webpage/",
+  },
 });
