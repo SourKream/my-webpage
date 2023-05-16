@@ -5,4 +5,5 @@ export default defineNuxtConfig({
   eslint: {
     lintOnStart: false,
   },
+  ssr: false,
 });
