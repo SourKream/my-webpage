@@ -1,6 +1,6 @@
 <template>
   <div>
-    <center>
+    <div style="text-align: center">
       <h1 class="site-heading">Welcome to my webpage</h1>
 
       <p class="text">
@@ -8,17 +8,17 @@
       </p>
 
       <OscillatingCube />
-    </center>
+    </div>
 
     <PostsList />
 
-    <center>
+    <div style="text-align: center">
       <iframe
         src="https://editor.p5js.org/SourKream/embed/LS_VYq7dC"
         width="600"
         height="600"
         style="border: none"
       />
-    </center>
+    </div>
   </div>
 </template>

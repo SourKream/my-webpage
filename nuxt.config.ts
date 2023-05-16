@@ -2,5 +2,7 @@
 export default defineNuxtConfig({
   css: ["~/assets/css/main.scss"],
   modules: ["@nuxtjs/eslint-module"],
-  eslint: {},
+  eslint: {
+    lintOnStart: false,
+  },
 });
