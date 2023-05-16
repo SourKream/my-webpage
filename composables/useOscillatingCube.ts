@@ -12,7 +12,7 @@ export default function useOscillatingCube() {
     let time = 0;
 
     p5.setup = () => {
-      const canvas = p5.createCanvas(width, height, p5.WEBGL);
+      p5.createCanvas(width, height, p5.WEBGL);
       p5.ortho();
     };
 
