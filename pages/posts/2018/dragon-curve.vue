@@ -1,7 +1,6 @@
 <template>
   <div>
-    <p>This post is about how to build a dragon curve</p>
-    <div id="cube_holder" />
+    <div id="curve_holder" />
   </div>
 </template>
 
@@ -12,7 +11,7 @@ definePageMeta({
   layout: "post",
 });
 
-const { render } = useOscillatingCube("cube_holder");
+const { render } = useDragonCurve("curve_holder");
 
 onMounted(async () => {
   const { default: P5 } = await import("p5");
