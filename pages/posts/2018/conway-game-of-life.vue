@@ -30,11 +30,15 @@ definePageMeta({
   layout: "post",
 });
 
-const { render } = useGameOfLife("gol_holder");
+let sketch = null;
+const { render } = useGameOfLife();
 
 onMounted(async () => {
   const { default: P5 } = await import("p5");
-  // eslint-disable-next-line no-new
-  new P5(render);
+  sketch = new P5(render, "gol_holder");
+});
+
+onUnmounted(() => {
+  sketch?.remove();
 });
 </script>

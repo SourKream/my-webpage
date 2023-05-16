@@ -1,6 +1,6 @@
 import type p5 from "p5";
 
-export default function useOscillatingCube(divId: string) {
+export default function useOscillatingCube() {
   const render = (p5: p5) => {
     const width = 700;
     const height = 480;
@@ -13,7 +13,6 @@ export default function useOscillatingCube(divId: string) {
 
     p5.setup = () => {
       const canvas = p5.createCanvas(width, height, p5.WEBGL);
-      canvas.parent(divId);
       p5.ortho();
     };
 

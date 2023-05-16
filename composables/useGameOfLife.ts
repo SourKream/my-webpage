@@ -1,6 +1,6 @@
 import type p5 from "p5";
 
-export default function useGameOfLife(divId: string) {
+export default function useGameOfLife() {
   const render = (p5: p5) => {
     const gridSize = 75;
     const cellSize = 8;
@@ -12,8 +12,7 @@ export default function useGameOfLife(divId: string) {
     let FR = 20;
 
     p5.setup = () => {
-      const canvas = p5.createCanvas(600, 600);
-      canvas.parent(divId);
+      p5.createCanvas(600, 600);
 
       // Random Initilise Current Generation
       for (let i = 0; i < gridSize; i++) grid[i] = new Array(gridSize);

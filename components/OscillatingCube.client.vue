@@ -3,11 +3,15 @@
 </template>
 
 <script setup>
-const { render } = useOscillatingCube("cube_holder");
+let sketch = null;
+const { render } = useOscillatingCube();
 
 onMounted(async () => {
   const { default: P5 } = await import("p5");
-  // eslint-disable-next-line no-new
-  new P5(render);
+  sketch = new P5(render, "cube_holder");
+});
+
+onUnmounted(() => {
+  sketch?.remove();
 });
 </script>

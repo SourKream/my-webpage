@@ -1,6 +1,6 @@
 import type p5 from "p5";
 
-export default function useDragonCurve(divId: string) {
+export default function useDragonCurve() {
   const render = (p5: p5) => {
     let initC = -1;
     let iter = 0;
@@ -10,8 +10,7 @@ export default function useDragonCurve(divId: string) {
     let Draw = true;
 
     p5.setup = () => {
-      const canvas = p5.createCanvas(750, 600);
-      canvas.parent(divId);
+      p5.createCanvas(750, 600);
 
       resetPoints();
     };
