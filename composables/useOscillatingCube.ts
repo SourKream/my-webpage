@@ -1,5 +1,7 @@
+import type p5 from "p5";
+
 export default function useOscillatingCube(divId: string) {
-  const render = (p5: any) => {
+  const render = (p5: p5) => {
     const width = 700;
     const height = 480;
 
