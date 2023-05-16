@@ -1,7 +1,6 @@
 # My Webpage
-## Build using Nuxt 3
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Built using [Nuxt 3](https://nuxt.com/docs/getting-started/introduction) 
 
 ## Setup
 
