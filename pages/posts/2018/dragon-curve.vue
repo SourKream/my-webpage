@@ -7,7 +7,7 @@
 <script setup>
 definePageMeta({
   title: "The Dragon Curve",
-  date: "Jan 09, 2018",
+  date: "Jan 10, 2018",
   layout: "post",
 });
 
