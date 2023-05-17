@@ -39,6 +39,7 @@ $on-laptop:        800px;
 }
 
 // Import partials
+@import "bootstrap/scss/bootstrap";
 @import
         "base",
         "layout",

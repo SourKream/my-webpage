@@ -1,21 +1,24 @@
 <template>
   <div>
     <div id="curve_holder" />
-    <div>
+    <div class="my-3">
       <label for="distance-input">Distance</label>
+      <br />
       <input id="distance-input" v-model="distanceVal" />
     </div>
-    <div>
+    <div class="my-3">
       <label for="decay-input">Decay</label>
+      <br />
       <input id="decay-input" v-model="decayVal" />
     </div>
-    <div>
+    <div class="my-3">
       <label for="lat-decay-input">Lat Decay</label>
+      <br />
       <input id="lat-decay-input" v-model="latDecayVal" />
     </div>
 
-    <button @click="() => resetPoints(sketch)">Reset</button>
-    <button @click="() => iterate(sketch)">Iterate</button>
+    <button class="mr-3" @click="() => resetPoints(sketch)">Reset</button>
+    <button class="mx-3" @click="() => iterate(sketch)">Iterate</button>
   </div>
 </template>
 
